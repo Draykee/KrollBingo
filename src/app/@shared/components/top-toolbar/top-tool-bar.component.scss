@@ -1,0 +1,22 @@
+
+#top-toolbar{
+  &.is-sticky {
+    transform: translateY(- var(--app-toolbar-top-height));
+    top: 0;
+  }
+}
+
+#main-toolbar {
+  &.is-sticky {
+    position: fixed;
+    top: 0;
+  }
+
+  .brand {
+    text-decoration: none;
+    color: var(--theme-foreground-base);
+  }
+
+  background-color: var(--theme-background-background);
+}
+

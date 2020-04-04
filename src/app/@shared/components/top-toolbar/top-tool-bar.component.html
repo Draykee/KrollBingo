@@ -1,0 +1,30 @@
+<mat-toolbar id="top-toolbar" class="top-toolbar" color="primary" [class.is-sticky]="headerFixed">
+  <div class="theme-container" fxLayout="row" fxLayoutAlign="space-between center">
+
+    <div fxLayout="row" fxLayoutAlign="start center">
+      <app-contacts fxLayout="row" fxLayoutAlign="start center" fxShow="false" fxShow.gt-sm></app-contacts>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="end center" class="">
+      <app-lang></app-lang>
+      <app-user-menu></app-user-menu>
+    </div>
+  </div>
+</mat-toolbar>
+
+<mat-toolbar id="main-toolbar" class="mat-elevation-z2" [class.is-sticky]="headerFixed">
+  <div class="theme-container" fxLayout="row" fxLayoutAlign="space-between start">
+    <span fxHide="false" fxHide.gt-sm>
+        <button mat-button (click)="sidenavToggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </span>
+    <a class="brand" routerLink="/" translate>APP_NAME</a>
+    <div fxShow="false" fxShow.gt-sm class="horizontal-menu">
+        <app-horizontal-menu ></app-horizontal-menu>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="start center">
+      <a routerLink="/app/home" mat-raised-button color="primary" fxShow="false" fxShow.gt-xs class="uppercase">Mitmachen!</a>
+    </div>
+  </div>
+</mat-toolbar>

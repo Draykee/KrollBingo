@@ -1,0 +1,37 @@
+{
+  "generator-ngx-rocket": {
+    "version": "8.0.1",
+    "props": {
+      "location": "path",
+      "strict": false,
+      "skipInstall": false,
+      "skipQuickstart": false,
+      "initGit": true,
+      "usePrefix": true,
+      "appName": "krollbingo",
+      "target": [
+        "web"
+      ],
+      "pwa": true,
+      "ui": "material",
+      "layout": "simple",
+      "auth": true,
+      "lazy": true,
+      "angulartics": true,
+      "languages": [
+        "de-DE"
+      ],
+      "analyticsProvider": "ga",
+      "googleAnalyticsAccount": "UA-136617550-1",
+      "tools": [
+        "compodoc"
+      ],
+      "utility": [],
+      "deploy": "firebase",
+      "projectName": "krollbingo",
+      "packageManager": "npm",
+      "mobile": [],
+      "desktop": []
+    }
+  }
+}

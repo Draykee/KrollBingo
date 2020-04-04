@@ -1,0 +1,28 @@
+@import "../../../theme/variables";
+
+.sidenav{
+  position: fixed;
+  z-index: 999999;
+  width: $main-sidenav-width;
+  padding: 8px 16px;
+  bottom: 0;
+  top: 0;
+  .close{
+    margin-left: 178px;
+  }
+  .divider{
+    margin: 8px 0;
+  }
+  .vertical-menu-wrapper{
+    height: calc(100% - 122px);
+  }
+}
+
+.op-image{
+  box-shadow: 0 0 2px #ccc;
+  border: 2px solid;
+  border-color: transparent;
+  cursor: pointer;
+  transition: 0.2s;
+}
+

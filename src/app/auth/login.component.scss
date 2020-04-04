@@ -1,0 +1,25 @@
+:host {
+
+}
+
+.inline-loader {
+  display: inline-block;
+}
+
+.version {
+  margin: 0;
+  padding: 12px 0;
+}
+
+.login-container,
+.mat-form-field {
+  width: 100%;
+}
+
+.login-fields > :not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.login-error {
+  color: var(--warn-color);
+}

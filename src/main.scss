@@ -1,0 +1,30 @@
+/*
+ * Entry point of global application style.
+ * Component-specific style should not go here and be included directly as part of the components.
+ */
+@import "theme/variables";
+@import "theme/base";
+@import "theme/bear-pattern";
+
+
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100%;
+  font-family: Roboto, serif;
+}
+
+// Material design icons font path
+$material-design-icons-font-directory-path: "~material-design-icons-iconfont/dist/fonts/";
+
+
+// Theme customization
+@import "theme/theme";
+
+// 3rd party libraries
+@import "~material-design-icons-iconfont/src/material-design-icons";
+
+

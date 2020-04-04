@@ -1,0 +1,13 @@
+<ng-container *ngFor="let menuItem of menuItems">
+
+  <a *ngIf="menuItem.routerLink" mat-button [routerLink]="[menuItem.routerLink]"
+    routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">
+    <span>{{menuItem.title}}</span>
+  </a>
+
+  <a *ngIf="menuItem.href && !menuItem.routerLink" mat-button
+    [attr.href]="menuItem.href || ''" [attr.target]="menuItem.target || ''">
+    <span>{{menuItem.title}}</span>
+  </a>
+
+</ng-container>

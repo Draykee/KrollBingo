@@ -1,0 +1,43 @@
+@import '~@angular/material/theming';
+
+@mixin variables-from-map($definitions, $name) {
+  @each $key, $val in $definitions {
+    --#{$name}-#{$key}: #{$val};
+  }
+}
+
+@mixin theme-palette-variables($theme) {
+  $primary: map-get($theme, primary);
+  --primary-color: #{mat-color($primary)};
+  --primary-lighter-color: #{mat-color($primary, lighter)};
+  --primary-darker-color: #{mat-color($primary, darker)};
+
+  $accent: map-get($theme, accent);
+  --accent-color: #{mat-color($accent)};
+  --accent-lighter-color: #{mat-color($accent, lighter)};
+  --accent-darker-color: #{mat-color($accent, darker)};
+
+  $warn: map-get($theme, warn);
+  --warn-color: #{mat-color($warn)};
+  --warn-lighter-color: #{mat-color($warn, lighter)};
+  --warn-darker-color: #{mat-color($warn, darker)};
+
+  .accent-text {
+    color: mat-color($accent);
+  }
+  .primary-text {
+    color: mat-color($primary);
+  }
+  .warn-text {
+    color: mat-color($warn);
+  }
+  .accent-bg {
+    background-color: mat-color($accent);
+  }
+  .primary-bg {
+    background-color: mat-color($primary);
+  }
+  .warn-bg {
+    background-color: mat-color($warn);
+  }
+}

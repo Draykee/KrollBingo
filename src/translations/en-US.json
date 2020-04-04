@@ -1,0 +1,16 @@
+{
+  "APP_NAME": "KrollBingo",
+  "About": "About",
+  "Home": "Hauptseite",
+  "Logged in as": "Angemeldet als",
+  "Login": "Anmelden",
+  "Logout": "Abmelden",
+  "Password": "Passwort",
+  "Password is required": "Passwort wird benötigt",
+  "User": "User",
+  "Username": "Benutzername",
+  "Username is required": "Benutzername wird benötigt",
+  "Username or password incorrect.": "Benutzername oder Passwort falsch.",
+  "Remember me": "Eingeloggt bleiben",
+  "Version": "Version"
+}

@@ -1,0 +1,16 @@
+:root {
+  --app-toolbar-top-height: 36px;
+  --app-toolbar-main-height: 36px;
+}
+
+$theme-max-width: 1300px;
+$top-toolbar-height: 36px;
+$main-toolbar-height: 72px;
+$user-menu-width: 220px;
+$header-image-min-height: 320px;
+$header-carousel-height: 460px;
+
+$main-content-header-offset-to-top: $main-toolbar-height + $top-toolbar-height + 10px;
+
+$main-sidenav-width: 250px;
+$search-sidenav-width: 288px;
